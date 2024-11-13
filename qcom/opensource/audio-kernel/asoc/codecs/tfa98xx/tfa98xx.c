@@ -1712,7 +1712,7 @@ static int tfa98xx_get_stereo_ctl(struct snd_kcontrol *kcontrol,
 }
 #endif
 
-static tfa98xx_miid;
+static int tfa98xx_miid;
 static int tfa98xx_info_miid(struct snd_kcontrol *kcontrol,
 			struct snd_ctl_elem_info *uinfo)
 {
@@ -1750,7 +1750,7 @@ static int tfa98xx_set_miid(struct snd_kcontrol *kcontrol,
 	return 1;
 }
 
-static tfa98xx_pcm_id;
+static int tfa98xx_pcm_id;
 static int tfa98xx_info_pcm_id(struct snd_kcontrol *kcontrol,
 			struct snd_ctl_elem_info *uinfo)
 {
